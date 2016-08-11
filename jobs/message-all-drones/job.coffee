@@ -7,12 +7,9 @@ class MessageAllDrones
   do: ({data}, callback) =>
     return callback @_userError(422, 'data.command is required') unless data?.command?
 
-    @connector.droneCommand data.command, "", false, (done) =>
-      metadata =
-        code: 200
-        status: http.STATUS_CODES[200]
+    @connector.messageAll data.command, data.steps
 
-      callback null, {metadata}
+    callback null
 
   _userError: (code, message) =>
     error = new Error message

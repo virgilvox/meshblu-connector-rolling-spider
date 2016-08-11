@@ -1,4 +1,4 @@
-title: 'Message Drone'
+title: 'Message All Drones'
 type: 'object'
 properties:
   data:
