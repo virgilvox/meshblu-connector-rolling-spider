@@ -1,6 +1,6 @@
-{job} = require '../../jobs/do-something'
+# {job} = require '../../jobs/do-something'
 
-describe 'DoSomething', ->
+xdescribe 'DoSomething', ->
   context 'when given a valid message', ->
     beforeEach (done) ->
       @connector = {}
