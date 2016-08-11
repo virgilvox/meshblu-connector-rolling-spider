@@ -1,0 +1,37 @@
+title: 'Message Specific Drone'
+type: 'object'
+properties:
+  data:
+    type: 'object'
+    properties:
+      command:
+        type: 'string'
+        enum: [
+          'connect'
+          'disconnect'
+          'takeOff'
+          'land'
+          'up'
+          'down'
+          'forward'
+          'backward'
+          'turnLeft'
+          'turnRight'
+          'tiltLeft'
+          'tiltRight'
+          'frontFlip'
+          'backFlip'
+          'leftFlip'
+          'rightFlip'
+          'emergency'
+          'flatTrim'
+          'release'
+        ]
+        required: true
+      steps:
+        type: 'number'
+        title: 'STEPS (How long to run the command - defaults to 2)'
+        default: 2
+      memberId:
+        title: 'Drone name or UUID'
+        type: 'string'

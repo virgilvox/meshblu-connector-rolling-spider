@@ -33,7 +33,8 @@
     "fs-cson": "^0.3.2",
     "meshblu-config": "^5.2.0",
     "meshblu-connector-runner": "^9.1.1",
-    "meshblu-connector-schema-generator": "^2.1.0"
+    "meshblu-connector-schema-generator": "^2.1.0",
+    "rolling-spider": "^1.5.2"
   },
   "meshbluConnector": {
     "githubSlug": "virgilvox/meshblu-connector-rolling-spider"

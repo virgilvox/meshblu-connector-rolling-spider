@@ -3,11 +3,15 @@ type: "object"
 properties:
   options:
     title: "Options"
-    type: "object"
+    type: 'object'
     properties:
-      example:
-        title: "Example String"
-        type: "string"
-    required: [
-      "example"
-    ]
+      swarm:
+        title: 'Enable swarm?'
+        type: 'boolean'
+        default: false
+      drones:
+        title: 'Add as many drones as you like. If left blank the first(or all if swarm) available will be chosen'
+        type: "array"
+        items:
+          title: "BLE UUID or localName"
+          type: "string"
